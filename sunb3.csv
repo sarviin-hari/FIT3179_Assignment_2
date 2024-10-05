@@ -1,0 +1,25 @@
+Reason,Gender,Location,Value
+School,Male,Urban,1032.90
+School,Female,Urban,1174.60
+School,Male,Rural,265.80
+School,Female,Rural,284.80
+Family Responsibility,Male,Urban,72.10
+Family Responsibility,Female,Urban,2240.70
+Family Responsibility,Male,Rural,13.10
+Family Responsibility,Female,Rural,744.10
+Further Studies,Male,Urban,48.90
+Further Studies,Female,Urban,42.50
+Further Studies,Male,Rural,11.20
+Further Studies,Female,Rural,11.50
+Disabled,Male,Urban,152.70
+Disabled,Female,Urban,51.30
+Disabled,Male,Rural,30.70
+Disabled,Female,Rural,18.90
+Not Interested,Male,Urban,50.40
+Not Interested,Female,Urban,7.50
+Not Interested,Male,Rural,12.30
+Not Interested,Female,Rural,7.90
+Retired,Male,Urban,427.30
+Retired,Female,Urban,193.00
+Retired,Male,Rural,70.90
+Retired,Female,Rural,32.90
