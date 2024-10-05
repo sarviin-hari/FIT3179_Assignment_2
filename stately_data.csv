@@ -1,4 +1,4 @@
-Year,state,latitude,longitude,latitude2,longitude2,category,value
+year,state,latitude,longitude,latitude2,longitude2,category,value
 2023,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_employed,1891.8
 2023,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_unemployed,44.6
 2023,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_outside,788.5
@@ -47,6 +47,9 @@ Year,state,latitude,longitude,latitude2,longitude2,category,value
 2023,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_employed,500.1
 2023,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_unemployed,24.2
 2023,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_outside,350
+2023,All States,,,,,lf_employed,16346.7
+2023,All States,,,,,lf_unemployed,565.1
+2023,All States,,,,,lf_outside,7197.8
 2022,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_employed,1812.2
 2022,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_unemployed,43.7
 2022,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_outside,823.7
@@ -95,6 +98,9 @@ Year,state,latitude,longitude,latitude2,longitude2,category,value
 2022,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_employed,492
 2022,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_unemployed,22.4
 2022,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_outside,345.3
+2022,All States,,,,,lf_employed,15941.6
+2022,All States,,,,,lf_unemployed,600.5
+2022,All States,,,,,lf_outside,7246.1
 2021,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_employed,1774.2
 2021,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_unemployed,65.3
 2021,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_outside,807.6
@@ -143,6 +149,9 @@ Year,state,latitude,longitude,latitude2,longitude2,category,value
 2021,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_employed,464.7
 2021,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_unemployed,19.9
 2021,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_outside,358.2
+2021,All States,,,,,lf_employed,15440.6
+2021,All States,,,,,lf_unemployed,694.3
+2021,All States,,,,,lf_outside,7361.7
 2020,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_employed,1752.4
 2020,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_unemployed,72
 2020,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_outside,854.1
@@ -191,6 +200,9 @@ Year,state,latitude,longitude,latitude2,longitude2,category,value
 2020,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_employed,466.2
 2020,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_unemployed,19.2
 2020,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_outside,337.3
+2020,All States,,,,,lf_employed,15161.8
+2020,All States,,,,,lf_unemployed,760.5
+2020,All States,,,,,lf_outside,7318.5
 2019,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_employed,1736
 2019,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_unemployed,47.5
 2019,Johor,2.0229012,103.3147721,1.0229012,104.3147721,lf_outside,797.9
@@ -239,3 +251,6 @@ Year,state,latitude,longitude,latitude2,longitude2,category,value
 2019,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_employed,478.7
 2019,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_unemployed,16.2
 2019,Terengganu,4.8630743,102.9949297,4.5630743,104.2349297,lf_outside,312.5
+2019,All States,,,,,lf_employed,15254.3
+2019,All States,,,,,lf_unemployed,512.2
+2019,All States,,,,,lf_outside,7066.2
