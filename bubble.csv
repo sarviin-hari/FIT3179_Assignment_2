@@ -1,0 +1,96 @@
+year,labour_size,toal_hours_worked,labour_productivity_by_employee,gdp,departments,sectors
+2019,1873,3938,104.3,101573,Agriculture,Agriculture
+2019,75,185,104.6,102887,Mining and quarrying,Mining and quarrying
+2019,439,1001,105.7,30448,"Oils, fats & food processing",Manufacturing
+2019,20,49,109.3,9181,Beverages & tobacco products,Manufacturing
+2019,252,515,112.2,6251,Textiles & apparel,Manufacturing
+2019,307,765,124.4,21685,"Wood, furniture & printing",Manufacturing
+2019,402,1004,108.9,90982,"Petroleum, chemicals & plastics",Manufacturing
+2019,362,904,107.8,37716,"Non-metallic, metal & fabricated products",Manufacturing
+2019,575,1402,117.6,89133,Electrical & optical products,Manufacturing
+2019,196,477,120.6,30887,Transport equipment & repair,Manufacturing
+2019,1463,3498,124.5,66453,Construction,Construction
+2019,103,244,115.5,38326,Utilities,Services
+2019,2529,6092,111.1,242704,Wholesale & retail trade,Services
+2019,1633,3807,110.5,49821,Food & accommodation,Services
+2019,539,1320,116.1,53632,Transport & storage,Services
+2019,236,556,117.6,84225,Information & communication,Services
+2019,375,863,110.5,93358,Finance & insurance,Services
+2019,1126,2695,116.6,68762,Real estate & business services,Services
+2019,2620,5708,118.3,189747,Other services,Services
+2020,1866,3779,102.2,99109,Agriculture,Agriculture
+2020,74,168,96.6,92879,Mining and quarrying,Mining and quarrying
+2020,448,950,105.1,30881,"Oils, fats & food processing",Manufacturing
+2020,18,42,99.5,7709,Beverages & tobacco products,Manufacturing
+2020,251,504,98.1,5444,Textiles & apparel,Manufacturing
+2020,299,653,118.2,20075,"Wood, furniture & printing",Manufacturing
+2020,410,945,105.7,90084,"Petroleum, chemicals & plastics",Manufacturing
+2020,363,813,93.6,32797,"Non-metallic, metal & fabricated products",Manufacturing
+2020,575,1262,120.4,91361,Electrical & optical products,Manufacturing
+2020,186,400,119.9,29255,Transport equipment & repair,Manufacturing
+2020,1399,2972,105,53616,Construction,Construction
+2020,104,225,113.4,37950,Utilities,Services
+2020,2557,5571,103.5,228561,Wholesale & retail trade,Services
+2020,1626,3370,81.4,36539,Food & accommodation,Services
+2020,539,1159,91.2,42078,Transport & storage,Services
+2020,243,525,120.8,89203,Information & communication,Services
+2020,376,802,113.3,96102,Finance & insurance,Services
+2020,1137,2469,98.7,58766,Real estate & business services,Services
+2020,2623,5363,117.4,188494,Other services,Services
+2021,1874,3954,101.6,99000,Agriculture,Agriculture
+2021,75,175,95.9,93717,Mining and quarrying,Mining and quarrying
+2021,469,1018,102.4,31516,"Oils, fats & food processing",Manufacturing
+2021,18,41,102,7756,Beverages & tobacco products,Manufacturing
+2021,261,521,101.2,5837,Textiles & apparel,Manufacturing
+2021,299,665,125.5,21341,"Wood, furniture & printing",Manufacturing
+2021,425,1015,115.4,101847,"Petroleum, chemicals & plastics",Manufacturing
+2021,367,853,96.4,34142,"Non-metallic, metal & fabricated products",Manufacturing
+2021,590,1371,134.5,104745,Electrical & optical products,Manufacturing
+2021,188,434,120.4,29655,Transport equipment & repair,Manufacturing
+2021,1385,3072,100.6,50889,Construction,Construction
+2021,105,236,115.4,39025,Utilities,Services
+2021,2615,5894,103.2,233144,Wholesale & retail trade,Services
+2021,1641,3641,72.2,32731,Food & accommodation,Services
+2021,535,1246,93.1,42653,Transport & storage,Services
+2021,250,579,125,94639,Information & communication,Services
+2021,374,843,125.5,105839,Finance & insurance,Services
+2021,1123,2555,90.2,53088,Real estate & business services,Services
+2021,2694,5727,117.3,193433,Other services,Services
+2022,1861,4006,102.4,99073,Agriculture,Agriculture
+2022,76,181,97.2,96199,Mining and quarrying,Mining and quarrying
+2022,493,1115,101.6,32856,"Oils, fats & food processing",Manufacturing
+2022,18,42,117.2,9062,Beverages & tobacco products,Manufacturing
+2022,271,564,103.2,6171,Textiles & apparel,Manufacturing
+2022,308,745,131.4,22962,"Wood, furniture & printing",Manufacturing
+2022,436,1059,113.6,102872,"Petroleum, chemicals & plastics",Manufacturing
+2022,377,909,100.8,36704,"Non-metallic, metal & fabricated products",Manufacturing
+2022,618,1488,146.8,119615,Electrical & optical products,Manufacturing
+2022,199,478,130.1,33889,Transport equipment & repair,Manufacturing
+2022,1382,3291,105.9,53441,Construction,Construction
+2022,109,255,115.4,40337,Utilities,Services
+2022,2752,6451,111.3,264511,Wholesale & retail trade,Services
+2022,1729,3907,91.2,43547,Food & accommodation,Services
+2022,574,1388,113.5,55799,Transport & storage,Services
+2022,259,619,126.5,99576,Information & communication,Services
+2022,375,842,126.2,106667,Finance & insurance,Services
+2022,1158,2723,107.4,65143,Real estate & business services,Services
+2022,2768,6059,121.4,205729,Other services,Services
+2023,1874,4070,102.5,99791,Agriculture,Agriculture
+2023,76,185,97.8,97199,Mining and quarrying,Mining and quarrying
+2023,521,1177,101,34524,"Oils, fats & food processing",Manufacturing
+2023,19,44,120.1,9625,Beverages & tobacco products,Manufacturing
+2023,262,553,107.9,6244,Textiles & apparel,Manufacturing
+2023,320,780,125.9,22879,"Wood, furniture & printing",Manufacturing
+2023,441,1085,111.3,102049,"Petroleum, chemicals & plastics",Manufacturing
+2023,385,930,103.7,38599,"Non-metallic, metal & fabricated products",Manufacturing
+2023,640,1559,139.4,117708,Electrical & optical products,Manufacturing
+2023,208,503,128.6,35074,Transport equipment & repair,Manufacturing
+2023,1397,3344,111.2,56689,Construction,Construction
+2023,110,263,117.7,41460,Utilities,Services
+2023,2811,6604,115.4,280040,Wholesale & retail trade,Services
+2023,1875,4268,90.5,46842,Food & accommodation,Services
+2023,604,1463,122.7,63501,Transport & storage,Services
+2023,272,638,125.1,103115,Information & communication,Services
+2023,382,869,121.3,104531,Finance & insurance,Services
+2023,1189,2850,113.8,70860,Real estate & business services,Services
+2023,2815,6198,126.2,217477,Other services,Services
