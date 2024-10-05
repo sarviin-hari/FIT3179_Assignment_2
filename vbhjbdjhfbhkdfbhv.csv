@@ -1,0 +1,20 @@
+labour_size,toal_hours_worked,labour_productivity_by_employee,gdp,departments,sectors
+1873,3938,104.3,101573,Agriculture,Agriculture
+75,185,104.6,102887,Mining and quarrying,Mining and quarrying
+439,1001,105.7,30448,"Oils, fats & food processing",Manufacturing
+20,49,109.3,9181,Beverages & tobacco products,Manufacturing
+252,515,112.2,6251,Textiles & apparel,Manufacturing
+307,765,124.4,21685,"Wood, furniture & printing",Manufacturing
+402,1004,108.9,90982,"Petroleum, chemicals & plastics",Manufacturing
+362,904,107.8,37716,"Non-metallic, metal & fabricated products",Manufacturing
+575,1402,117.6,89133,Electrical & optical products,Manufacturing
+196,477,120.6,30887,Transport equipment & repair,Manufacturing
+1463,3498,124.5,66453,Construction,Construction
+103,244,115.5,38326,Utilities,Services
+2529,6092,111.1,242704,Wholesale & retail trade,Services
+1633,3807,110.5,49821,Food & accommodation,Services
+539,1320,116.1,53632,Transport & storage,Services
+236,556,117.6,84225,Information & communication,Services
+375,863,110.5,93358,Finance & insurance,Services
+1126,2695,116.6,68762,Real estate & business services,Services
+2620,5708,118.3,189747,Other services,Services
