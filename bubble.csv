@@ -1,4 +1,4 @@
-year,labour_size,toal_hours_worked,labour_productivity_by_employee,gdp,departments,sectors
+year,labour_size,total_hours_worked,labour_productivity_by_employee,gdp,departments,sectors
 2019,1873,3938,104.3,101573,Agriculture,Agriculture
 2019,75,185,104.6,102887,Mining and quarrying,Mining and quarrying
 2019,439,1001,105.7,30448,"Oils, fats & food processing",Manufacturing
