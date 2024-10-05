@@ -1,13 +1,13 @@
-Reason,Gender,Value
-School,Male,1298.7
-Family Responsibility,Male,85.2
-Further Studies,Male,60.1
-Disabled,Male,183.4
-Not Interested,Male,62.8
-Retired,Male,498.2
-School,Female,1459.3
-Family Responsibility,Female,2984.8
-Further Studies,Female,54
-Disabled,Female,70.1
-Not Interested,Female,15.4
-Retired,Female,225.9
+Reason,Gender,Value,Order
+Disabled,Male,183.4,1
+Disabled,Female,70.1,2
+Family Responsibility,Male,85.2,3
+Family Responsibility,Female,2984.8,4
+Further Studies,Male,60.1,5
+Further Studies,Female,54,6
+Not Interested,Male,62.8,7
+Not Interested,Female,15.4,8
+Retired,Male,498.2,9
+Retired,Female,225.9,10
+School,Male,1298.7,11
+School,Female,1459.3,12
