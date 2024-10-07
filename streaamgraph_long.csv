@@ -1,0 +1,169 @@
+Year,Quarter,category,value
+2017,I,Less than 3 months,155.9
+2017,II,Less than 3 months,155.3
+2017,III,Less than 3 months,149.2
+2017,IV,Less than 3 months,147.4
+2018,I,Less than 3 months,150.6
+2018,II,Less than 3 months,143.5
+2018,III,Less than 3 months,171.3
+2018,IV,Less than 3 months,161.1
+2019,I,Less than 3 months,171.6
+2019,II,Less than 3 months,172.6
+2019,III,Less than 3 months,164.1
+2019,IV,Less than 3 months,164.6
+2020,I,Less than 3 months,159.0
+2020,II,Less than 3 months,240.7
+2020,III,Less than 3 months,294.2
+2020,IV,Less than 3 months,285.8
+2021,I,Less than 3 months,316.1
+2021,II,Less than 3 months,385.0
+2021,III,Less than 3 months,331.6
+2021,IV,Less than 3 months,353.5
+2022,I,Less than 3 months,353.4
+2022,II,Less than 3 months,336.9
+2022,III,Less than 3 months,321.0
+2022,IV,Less than 3 months,313.5
+2023,I,Less than 3 months,312.4
+2023,II,Less than 3 months,318.1
+2023,III,Less than 3 months,316.5
+2023,IV,Less than 3 months,311.6
+2017,I,"3 months to less than 
+6 months",96.7
+2017,II,"3 months to less than 
+6 months",109.2
+2017,III,"3 months to less than 
+6 months",112.5
+2017,IV,"3 months to less than 
+6 months",111.2
+2018,I,"3 months to less than 
+6 months",113.3
+2018,II,"3 months to less than 
+6 months",119.6
+2018,III,"3 months to less than 
+6 months",92.2
+2018,IV,"3 months to less than 
+6 months",93.3
+2019,I,"3 months to less than 
+6 months",95.2
+2019,II,"3 months to less than 
+6 months",123.6
+2019,III,"3 months to less than 
+6 months",119.5
+2019,IV,"3 months to less than 
+6 months",109.8
+2020,I,"3 months to less than 
+6 months",94.7
+2020,II,"3 months to less than 
+6 months",149.9
+2020,III,"3 months to less than 
+6 months",152.9
+2020,IV,"3 months to less than 
+6 months",193.1
+2021,I,"3 months to less than 
+6 months",165.3
+2021,II,"3 months to less than 
+6 months",143.0
+2021,III,"3 months to less than 
+6 months",177.8
+2021,IV,"3 months to less than 
+6 months",149.8
+2022,I,"3 months to less than 
+6 months",141.3
+2022,II,"3 months to less than 
+6 months",128.9
+2022,III,"3 months to less than 
+6 months",114.7
+2022,IV,"3 months to less than 
+6 months",109.3
+2023,I,"3 months to less than 
+6 months",100.4
+2023,II,"3 months to less than 
+6 months",94.9
+2023,III,"3 months to less than 
+6 months",85.8
+2023,IV,"3 months to less than 
+6 months",83.4
+2017,I,"6 months to less than 
+1 year",45.9
+2017,II,"6 months to less than 
+1 year",52.0
+2017,III,"6 months to less than 
+1 year",46.7
+2017,IV,"6 months to less than 
+1 year",45.1
+2018,I,"6 months to less than 
+1 year",47.6
+2018,II,"6 months to less than 
+1 year",43.8
+2018,III,"6 months to less than 
+1 year",45.7
+2018,IV,"6 months to less than 
+1 year",45.5
+2019,I,"6 months to less than 
+1 year",62.2
+2019,II,"6 months to less than 
+1 year",54.2
+2019,III,"6 months to less than 
+1 year",53.9
+2019,IV,"6 months to less than 
+1 year",46.9
+2020,I,"6 months to less than 
+1 year",57.7
+2020,II,"6 months to less than 
+1 year",64.2
+2020,III,"6 months to less than 
+1 year",92.0
+2020,IV,"6 months to less than 
+1 year",88.5
+2021,I,"6 months to less than 
+1 year",89.9
+2021,II,"6 months to less than 
+1 year",71.6
+2021,III,"6 months to less than 
+1 year",90.6
+2021,IV,"6 months to less than 
+1 year",62.5
+2022,I,"6 months to less than 
+1 year",58.9
+2022,II,"6 months to less than 
+1 year",65.2
+2022,III,"6 months to less than 
+1 year",61.0
+2022,IV,"6 months to less than 
+1 year",56.7
+2023,I,"6 months to less than 
+1 year",47.6
+2023,II,"6 months to less than 
+1 year",45.7
+2023,III,"6 months to less than 
+1 year",42.0
+2023,IV,"6 months to less than 
+1 year",40.3
+2017,I,More than 1 year,23.3
+2017,II,More than 1 year,29.3
+2017,III,More than 1 year,31.7
+2017,IV,More than 1 year,36.8
+2018,I,More than 1 year,41.4
+2018,II,More than 1 year,26.4
+2018,III,More than 1 year,38.5
+2018,IV,More than 1 year,39.6
+2019,I,More than 1 year,44.2
+2019,II,More than 1 year,32.9
+2019,III,More than 1 year,33.7
+2019,IV,More than 1 year,41.7
+2020,I,More than 1 year,45.5
+2020,II,More than 1 year,30.8
+2020,III,More than 1 year,53.1
+2020,IV,More than 1 year,67.0
+2021,I,More than 1 year,68.7
+2021,II,More than 1 year,63.8
+2021,III,More than 1 year,58.1
+2021,IV,More than 1 year,45.2
+2022,I,More than 1 year,39.4
+2022,II,More than 1 year,36.5
+2022,III,More than 1 year,37.3
+2022,IV,More than 1 year,35.9
+2023,I,More than 1 year,35.4
+2023,II,More than 1 year,34.7
+2023,III,More than 1 year,24.3
+2023,IV,More than 1 year,25.6
