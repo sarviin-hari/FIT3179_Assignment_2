@@ -1,8 +1,8 @@
 By Gender,Reason,Gender,Value,Order
 Disabled-Male,Disabled,Male,183.4,1.1
 Disabled-Female,Disabled,Female,70.1,1.2
-Family-Male,Family,Male,85.2,1.3
-Family-Female,Family,Female,2984.8,1.4
+Family Duty-Male,Family,Male,85.2,1.3
+Family Duty-Female,Family,Female,2984.8,1.4
 Further Study-Male,Further Study,Male,60.1,1.5
 Further Study-Female,Further Study,Female,54,1.6
 No Interest-Male,No Interest,Male,62.8,1.7
