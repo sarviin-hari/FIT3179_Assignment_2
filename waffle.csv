@@ -1,43 +1,43 @@
-Year,Origin,TotalOrigin,TotalOriginGrouped
-2017,Less than 3 months,340.5,147.4
+Year,Origin,TotalOrigin,TotalOriginGrouped,Percent,PercentOfTotal
+2017,Less than 3 months,340.5,147.4,43.28928047,43
 2017,"3 months to less than 
-6 months",340.5,111.2
+6 months",340.5,111.2,32.65785609,33
 2017,"6 months to less than 
-1 year",340.5,45.1
-2017,More than 1 year,340.5,36.8
-2018,Less than 3 months,339.5,161.1
+1 year",340.5,45.1,13.24522761,13
+2017,More than 1 year,340.5,36.8,10.80763583,11
+2018,Less than 3 months,339.5,161.1,47.45213549,47
 2018,"3 months to less than 
-6 months",339.5,93.3
+6 months",339.5,93.3,27.48159057,28
 2018,"6 months to less than 
-1 year",339.5,45.5
-2018,More than 1 year,339.5,39.6
-2019,Less than 3 months,363,164.6
+1 year",339.5,45.5,13.40206186,13
+2018,More than 1 year,339.5,39.6,11.66421208,12
+2019,Less than 3 months,363,164.6,45.34435262,45
 2019,"3 months to less than 
-6 months",363,109.8
+6 months",363,109.8,30.24793388,30
 2019,"6 months to less than 
-1 year",363,46.9
-2019,More than 1 year,363,41.7
-2020,Less than 3 months,634.4,285.8
+1 year",363,46.9,12.92011019,13
+2019,More than 1 year,363,41.7,11.48760331,12
+2020,Less than 3 months,634.4,285.8,45.05044136,45
 2020,"3 months to less than 
-6 months",634.4,193.1
+6 months",634.4,193.1,30.43820933,30
 2020,"6 months to less than 
-1 year",634.4,88.5
-2020,More than 1 year,634.4,67
-2021,Less than 3 months,611,353.5
+1 year",634.4,88.5,13.95018916,14
+2020,More than 1 year,634.4,67,10.56116015,11
+2021,Less than 3 months,611,353.5,57.85597381,58
 2021,"3 months to less than 
-6 months",611,149.8
+6 months",611,149.8,24.51718494,25
 2021,"6 months to less than 
-1 year",611,62.5
-2021,More than 1 year,611,45.2
-2022,Less than 3 months,515.4,313.5
+1 year",611,62.5,10.22913257,10
+2021,More than 1 year,611,45.2,7.397708674,7
+2022,Less than 3 months,515.4,313.5,60.82654249,61
 2022,"3 months to less than 
-6 months",515.4,109.3
+6 months",515.4,109.3,21.20682965,21
 2022,"6 months to less than 
-1 year",515.4,56.7
-2022,More than 1 year,515.4,35.9
-2023,Less than 3 months,460.9,311.6
+1 year",515.4,56.7,11.00116414,11
+2022,More than 1 year,515.4,35.9,6.965463718,7
+2023,Less than 3 months,460.9,311.6,67.60685615,68
 2023,"3 months to less than 
-6 months",460.9,83.4
+6 months",460.9,83.4,18.09503146,18
 2023,"6 months to less than 
-1 year",460.9,40.3
-2023,More than 1 year,460.9,25.6
+1 year",460.9,40.3,8.743762204,9
+2023,More than 1 year,460.9,25.6,5.554350184,5
