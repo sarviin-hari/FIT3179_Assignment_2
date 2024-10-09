@@ -1,0 +1,198 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "params": [
+      {
+        "name": "Year_selection",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2019,
+          "max": 2023,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ],
+    "vconcat": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_Assignment_2/refs/heads/main/bubble.csv"
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "param": "brush",
+              "title": "Sectors",
+              "field": "sectors",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Agriculture",
+                  "Mining and quarrying",
+                  "Manufacturing",
+                  "Construction",
+                  "Services"
+                ],
+                "range": ["#1abc9c", "#00bcd4", "#3f51b5", "#9b59b6", "#3498db"]
+              },
+              "legend": {
+                "title": "Sectors",
+                "labelFontSize": 18,
+                "titleFontSize": 19
+              }
+            },
+            "value": "lightgray"
+          },
+          "size": {
+            "title": "Labour Size",
+            "field": "labour_size",
+            "scale": {
+              "domain": [-10, 2900],
+              "range": [100, 2000]
+            },
+            "type": "quantitative",
+            "legend": {
+              "title": "Labour Size",
+              "labelFontSize": 18,
+              "titleFontSize": 19
+            }
+          },
+          "x": {
+            "field": "total_hours_worked",
+            "title": "Total Hours Worked",
+            "scale": {
+              "domain": [-1, 7000]
+            },
+            "type": "quantitative",
+            "axis": {
+              "title": "Total Hours Worked",
+              "labelFontSize": 18,
+              "titleFontSize": 19
+            }
+          },
+          "y": {
+            "title": "Labour Productivity",
+            "field": "labour_productivity_by_employee",
+            "scale": {
+              "domain": [0, 150]
+            },
+            "type": "quantitative",
+            "axis": {
+              "title": "Labour Productivity",
+              "labelFontSize": 18,
+              "titleFontSize": 19
+            }
+          },
+          "tooltip": [
+            {"field": "departments", "title": "Industry"},
+            {"field": "sectors", "title": "Sector"},
+            {"field": "labour_size", "title": "Labour Size"},
+            {"field": "total_hours_worked", "title": "Total Hours Worked"},
+            {"field": "labour_productivity_by_employee", "title": "Labour Productivity"}
+          ]
+        },
+        "width": 800,
+        "height": 400,
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size": 100000
+        },
+        "params": [
+          {
+            "name": "brush",
+            "select": {
+              "type": "interval",
+              "encodings": ["x"]
+            }
+          }
+        ],
+        "transform": [
+          {
+            "filter": "datum.year == Year_selection"
+          },
+          {
+            "filter": {
+              "param": "click"
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_Assignment_2/refs/heads/main/bubble.csv"
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "param": "click",
+              "field": "sectors",
+              "scale": {
+                "domain": [
+                  "Agriculture",
+                  "Mining and quarrying",
+                  "Manufacturing",
+                  "Construction",
+                  "Services"
+                ],
+                "range": ["#1abc9c", "#00bcd4", "#3f51b5", "#9b59b6", "#3498db"]
+              },
+              "legend": {
+                "title": "Sectors",
+                "labelFontSize": 18,
+                "titleFontSize": 19
+              }
+            },
+            "value": "lightgray"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "labour_size",
+            "type": "quantitative",
+            "title": "Labour Force Size",
+            "axis": {
+              "title": "Labour Force Size",
+              "labelFontSize": 18,
+              "titleFontSize": 19
+            }
+          },
+          "y": {
+            "title": "Sectors",
+            "field": "sectors",
+            "axis": {
+              "title": "Sectors",
+              "labelFontSize": 18,
+              "titleFontSize": 19
+            }
+          },
+          "tooltip": [
+            {"field": "sectors", "title": "Sector"},
+            {"field": "labour_size", "title": "Labour Size"}
+          ]
+        },
+        "width": 800,
+        "height": 100,
+        "mark": "bar",
+        "params": [
+          {
+            "name": "click",
+            "select": {
+              "type": "point",
+              "encodings": ["color"]
+            }
+          }
+        ],
+        "transform": [
+          {
+            "filter": "datum.year == Year_selection"
+          },
+          {
+            "filter": {
+              "param": "brush"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

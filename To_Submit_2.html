@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Force in Malaysia - Visualization Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            display: block;
+            background-color: #f0f2f5;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .page-wrapper {
+            width: 1400px;
+            background-color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            font-family: 'Merriweather', serif;
+            font-size: 4.5rem;
+            padding: 30px;
+            background-color: #1d3557;
+            color: #f1faee;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        .section-heading {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            color: #1d3557;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #457b9d;
+        }
+
+        .chart-container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateZ(0); 
+        }
+
+        .chart-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .split-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.75rem;
+            color: #457b9d;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2rem;
+            color: #6c757d;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .chart {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .side-by-side-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        .side-by-side-container .chart-container {
+            width: 45%;
+        }
+
+        .split-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px 0;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateZ(0); 
+        }
+
+        .split-container .split-title {
+            text-align: left;
+            font-family: 'Merriweather', serif;
+            font-size: 2.75rem;
+            color: #457b9d;
+            margin-bottom: 30px;
+        }
+
+        .split-container .content-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content-container .chart {
+            width: 48%;
+        }
+
+        .content-container .text-container {
+            width: 48%;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            Labour Force in Malaysia
+        </header>
+
+        <!-- Labour Force Overview Section -->
+        <div class="chart-container">
+            <h2>Labour Force Participation by State</h2>
+            <div id="chart1" class="chart"></div>
+            <p>
+                From 2019 to 2023, Malaysia's <i>Labour Force Participation Rate</i> varied across states. Urban areas like <b>Selangor</b> and <b>Penang</b> consistently showed higher participation, while rural regions had lower engagement.
+            </p>
+            <p>
+                <b>Employment</b> grew steadily from <b>15.25 million in 2019</b> to <b>16.35 million in 2023</b>, with <b>Selangor</b> leading, followed by <b>Sabah</b> and <b>Sarawak</b>. <b>Unemployment</b> remained stable, increasing slightly from <b>512,000</b> to <b>565,000</b>, with fluctuations during the <i>COVID-19 pandemic</i>, especially in <b>Sabah</b>.
+            </p>
+            <p>
+                The number of people <i>outside the labour force</i>, including students and retirees, remained high, increasing from <b>7.07 million</b> to <b>7.20 million</b> during this period. Overall, Malaysia saw steady employment growth with slight unemployment fluctuations, while a significant portion of the population stayed outside the labour force due to socioeconomic factors.
+            </p>
+                    </div>
+        
+        
+        
+        
+
+        <!-- Employment Section -->
+        <div class="section-heading">Employment</div>
+
+        <div class="chart-container">
+            <h2>Employment Growth and Trends by Industry</h2>
+            <div id="chart2" class="chart"></div>
+            <p>
+                The chart shows the relationship between <b>total hours worked</b>, <b>labour productivity</b>, and the <i>employed labour force</i> across industries from 2019 to 2023. Key sectors like <b>Manufacturing</b> and <b>Services</b> dominate, while smaller sectors like <b>Mining and Quarrying</b> contribute less.
+            </p>
+            <p>
+                <b>Manufacturing</b> sectors such as <b>Electrical & Optical Products</b> and <b>Wood, Furniture & Printing</b> exhibit high productivity despite smaller workforces, especially in 2022-2023. In contrast, <b>Food & Accommodation</b> and <b>Transport & Storage</b> have lower productivity despite longer working hours, indicating potential inefficiencies.
+            </p>
+            <p>
+                The <b>Services sector</b> employs the largest workforce, particularly in <b>Wholesale & Retail Trade</b>. Meanwhile, <b>Agriculture</b> has a moderate workforce with relatively lower productivity, and <b>Construction</b> shows steady growth in both workforce size and productivity. Overall, high-tech industries in <b>Manufacturing</b> and <b>Services</b> are vital for driving productivity improvements in Malaysia's labour market.
+            </p>
+            
+                        </div>
+
+        <!-- Split container with title above both graph and text -->
+        <div class="split-container">
+            <h2 class="split-title">Gender Distribution of Employed Labour Force by Industry</h2>
+            <div class="content-container">
+                <div id="chart5" class="chart"></div>
+                <div class="text-container">
+                    <p>
+                        The chart shows the gender distribution of the employed labor force across different sectors. In <b>Agriculture</b>, <i>males</i> slightly outnumber <i>females</i>, but the gap is smaller compared to other sectors. <b>Mining and Quarrying</b> is overwhelmingly <i>male-dominated</i>, with minimal female representation. Similarly, <b>Manufacturing</b> and <b>Construction</b> are also <i>male-dominated</i>, with significantly fewer females.
+                    </p>
+                
+                </div>
+            </div>
+            <p>
+                The <b>Services sector</b> shows a more balanced gender ratio, although <i>males</i> still make up the majority.
+            </p>
+            <p>
+                From the data, <i>women</i> are more likely to be out of the workforce due to reasons like <i>"Family Duty"</i> and <i>"School"</i>. This is particularly evident in the <i>"Family Duty"</i> category, where <i>females</i> far outnumber <i>males</i>, indicating a potential barrier to labor force participation for women.
+            </p>
+
+        </div>
+
+        <!-- Unemployment Section -->
+        <div class="section-heading">Unemployment by Work Experience and Age Group</div>
+
+        
+        <div class="split-container">
+            <h2 class="split-title">Unemployment Duration Trends</h2>
+            <div class="content-container">
+                <div id="chart4" class="chart"></div>
+                <div class="text-container">
+                    <p>
+                        The visualization shows the changes in unemployment duration in Malaysia from 2017 to 2023. The <b>less than 3 months</b> category has grown significantly, reaching <b>68%</b> in <i>2023</i>, indicating that more people are finding jobs quickly compared to earlier years.
+                    </p>
+                </div>
+            </div>
+            <p>
+                The <b>3 to 6 months</b> category saw a decline from around <b>30%</b> to <i>18%</i> in <i>2023</i>, showing a shift toward shorter unemployment periods. Meanwhile, the <b>6 months to 1 year</b> category remained steady, around <i>9-14%</i>, with a slight dip to <i>9%</i> in 2023.
+            </p>
+            <p>
+                Long-term unemployment, categorized as <b>more than 1 year</b>, has consistently decreased, making up only <i>5%</i> of the unemployed in <i>2023</i>. This suggests improving job market conditions and reduced long-term unemployment.
+            </p>
+
+        </div>
+
+        <div class="split-container">
+            <h2 class="split-title">Work Experience Distribution of Unemployed Individuals by Age Group</h2>
+            <div class="content-container">
+                <div id="chart3" class="chart"></div>
+                <div class="text-container">
+                    <p>
+                        The visualization shows that in the <i>younger age groups</i> (<b>15-24</b>), the majority of unemployed individuals have <b>never worked before</b>, with significantly fewer having prior work experience. 
+                    </p>
+
+                </div>
+            </div>
+            <p>
+                In the <i>middle age groups</i> (<b>25-39</b>), the gap between those who have worked and those who haven't begins to narrow.
+            </p>
+            <p>
+                In the <i>older age groups</i> (<b>40-64</b>), most unemployed individuals have <b>worked before</b>, indicating a shift where older individuals are more likely to have previous work experience, while younger individuals are more likely to have <b>never worked</b>.
+            </p>
+        </div>
+        
+
+        
+        <!-- Outside Labour Force Section -->
+        <div class="section-heading">Outside Labour Force</div>
+
+        <!-- Split container with title above both graph and text -->
+        <div class="chart-container">
+            <h2>Reasons for Non-Participation in the Labour Force</h2>
+            <div id="chart6" class="chart"></div>
+            <p>
+                The chart displays the reasons for non-participation in the labour force from 2017 to 2023, ranking the reasons by prevalence.
+            </p>
+            <p>
+                <b>Family Responsibility</b> and <b>School</b> consistently rank at the top, with <b>School</b> being the dominant reason for non-participation. In 2020, <b>Family Responsibility</b> briefly overtook <b>School</b>, highlighting the influence of caregiving and educational commitments.
+            </p>
+            <p>
+                <b>Retirement</b> remains in third place, reflecting a stable proportion of retirees. <b>Further Studies</b> and <b>Disabled</b> fluctuate in lower ranks, with <b>Further Studies</b> rising in rank in 2021. <b>Not Interested</b> consistently ranks lowest, indicating it is a less common reason for non-participation.
+            </p>
+            <p>
+                Overall, the chart shows that non-participation is primarily driven by <i>education</i> and <i>family obligations</i>, with some shifts reflecting changes in societal dynamics.
+            </p>
+                </div>
+
+        <!-- Split container with title above both graph and text -->
+        <div class="split-container">
+            <h2 class="split-title">Gender Distribution of Non-Participation in the Labour Force</h2>
+            <div class="content-container">
+                <div id="chart7" class="chart"></div>
+                <div class="text-container">
+                    <p>
+                        The chart illustrates the <b>gender distribution</b> of non-participation in the labour force, highlighting significant trends.
+                    </p>
+                    <p>
+                        <b>Family Duty</b> heavily impacts <i>females</i>, with <b>2,984.8</b> recorded for <i>females</i> compared to <b>85.2</b> for <i>males</i>. 
+                    </p>
+                </div>
+
+
+            </div>
+            <p>
+                In contrast, the <b>School</b> category shows <b>1,298.7</b> <i>males</i> and <b>1,459.3</b> <i>females</i>, indicating education commitments are slightly more prevalent among <i>females</i>.
+            </p>
+            <p>
+                The <b>Retired</b> category reveals a higher value for <i>males</i> at <b>498.2</b>, while <b>Disabled</b> shows <b>183.4</b> <i>males</i> versus <b>70.1</b> <i>females</i>. 
+            </p>
+            <p>
+                For <b>Further Study</b> and <b>No Interest</b>, <i>males</i> report higher rates, with <b>60.1</b> compared to <b>54</b> for <i>females</i> in <b>Further Study</b> and <b>62.8</b> versus <b>15.4</b> in <b>No Interest</b>.
+            </p>
+            <p>
+                Overall, the chart highlights significant <b>gender disparities</b> in non-participation reasons, with <b>Family Duty</b> and <b>School</b> as major factors for <i>women</i>.
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        vegaEmbed('#chart1', './To_Submit_Map.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart2', './To_Submit_Bubble.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart3', './To_Submit_Sankey.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart4', './To_Submit_Waffle.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart5', './To_Submit_Mosaic.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart6', './To_Submit_Bump.json', { "actions": false }).then(function(result) {}).catch(console.error);
+        vegaEmbed('#chart7', './To_Submit_Sunburst.json', { "actions": false }).then(function(result) {}).catch(console.error);
+
+    </script>
+
+</body>
+</html>

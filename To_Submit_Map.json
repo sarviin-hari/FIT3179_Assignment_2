@@ -1,0 +1,197 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 400,
+    "projection": {
+      "type": "mercator"    },    
+    "params": [
+      {
+        "name": "Year_selection",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2019,
+          "max": 2023,
+          "step": 1,
+          "name": "Year: "
+        }
+      }, 
+      {
+        "name": "State_selection",
+        "value": "All States",
+        "bind": {
+          "input": "select",
+          "options": [
+            "All States", "Johor", "Kedah", "Kelantan", "Melaka", "Negeri Sembilan", "Pahang", "Pulau Pinang", "Perak", "Perlis", "Selangor", "Terengganu", "Sabah", "Sarawak", "Kuala Lumpur", "Putrajaya", "Labuan"
+          ],
+          "name": "State: "
+        }
+      }
+  
+    ],
+
+    "layer": [ 
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_Assignment_2/refs/heads/main/state.csv"
+        },
+        "transform": [
+          {
+            "lookup": "state",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/malaysia.topojson",
+                "format": {
+                  "type": "topojson",
+                  "feature": "states"
+
+                }
+              },
+              "key": "properties.Name"
+            },
+            "as": "geo"
+          },
+          {"filter": "datum.year == Year_selection"}
+        ],
+        "mark": {"type": "geoshape", "stroke": "#fff"},
+        "encoding": {
+          "shape": {"field": "geo", "type": "geojson"},
+          "color": {
+            "field": "p_rate",
+            "type": "quantitative",
+            "title": ["Percentage (%)"],
+            "scale": {
+              "type": "threshold",
+              "domain": [10, 20, 30, 40, 50, 60, 70, 80],
+              "range": [
+                "#d8cbc4", "#bca89f", "#a08679", "#8b6c5c", "#765341",
+                "#6a4a3a", "#5b3e31", "#4c3228"
+              ]
+            },
+            "legend": {
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "labelFontSize": 18,
+              "titleFontSize": 19,
+              "symbolStrokeWidth": 10,
+              "symbolType": "square",
+              "direction": "horizontal", 
+              "orient": "bottom-right"
+
+            }
+          },
+          "tooltip": [
+            {"field": "state", "type": "nominal", "title": "State"},
+            {
+              "field": "p_rate",
+              "type": "quantitative",
+              "title": "Percentage of Labour Force to Working Population (%)",
+              "format": ".2f"
+            },
+            {"field": "year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      },
+      
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 2.7023855,
+              "longitude": 114.6547283,
+              "Year": 2021
+
+            },
+            {
+              "latitude": 5.425735899,  
+              "longitude": 114.5326392,
+              "Year": 2021
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },
+
+
+    {
+        "data": {
+            "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_Assignment_2/refs/heads/main/stately_data.csv"
+        },
+        "transform": [
+            {"filter": "datum.year == Year_selection && datum.state == State_selection"},
+            {
+                "calculate": "106.7638", 
+                "as": "longitude"
+              },
+              {
+                "calculate": "5.14444", 
+                "as": "latitude"
+              }
+    
+        ],
+        "mark": {"type": "arc", "innerRadius": 20, "outerRadius": 80},
+        "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"},  
+            "theta": {"field": "value", "type": "quantitative"},
+            "color": {"field": "category", "type": "nominal",
+            "scale": {
+                "domain": ["lf_employed", "lf_outside", "lf_unemployed"],
+                "range":["#CD853F", "#F4A460", "#F5DEB3"]  
+              }        
+                ,
+                "legend": {
+                    "titleAlign": "center",
+                    "titleAnchor": "middle",
+                    "labelFontSize": 18,
+                    "titleFontSize": 19,
+                          "symbolStrokeWidth": 10,
+                    "title": "Working Population",
+                    "symbolType": "square",
+                    "direction": "horizontal", 
+                    "orient": "top"  ,
+"labelExpr": "datum.label === 'lf_employed' ? 'Employed' : datum.label === 'lf_outside' ? 'Outside Labour' : datum.label === 'lf_unemployed' ? 'Unemployed' : datum.label"
+    
+                  }
+        },
+        "order": {
+            "field": "category",
+            "type": "nominal",
+            "sort": "ascending" 
+          },
+      
+            "tooltip": [
+            {"field": "category"}, 
+            {"field": "value"}, 
+            {"field": "longitude"}, 
+            {"field": "latitude"},
+            {"field": "state"},
+            {"field": "year"}
+            ]
+        }
+        
+    }
+      
+
+
+
+    
+    ],
+    "config": {
+
+    }  
+  
+  }
+  
