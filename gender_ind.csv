@@ -4,11 +4,13 @@ Mining and quarrying,Male,2019,1220.9
 Manufacturing,Male,2019,1751.8
 Construction,Male,2019,74.3
 Services,Male,2019,4090.1
-Agriculture,Female,2019,5871.0
+Agriculture,Female,2019,5871
 Mining and quarrying,Female,2019,320.3
 Manufacturing,Female,2019,1026.7
 Construction,Female,2019,14.4
 Services,Female,2019,2135.7
+All Sector,Male,2019,16339.5
+All Sector,Female,2019,9368.1
 Agriculture,Male,2020,9151.2
 Mining and quarrying,Male,2020,1153.7
 Manufacturing,Male,2020,1646.7
@@ -19,6 +21,8 @@ Mining and quarrying,Female,2020,300.9
 Manufacturing,Female,2020,980.5
 Construction,Female,2020,15.6
 Services,Female,2020,1977.3
+All Sector,Male,2020,16195
+All Sector,Female,2020,8842.5
 Agriculture,Male,2021,9194.6
 Mining and quarrying,Male,2021,1171.5
 Manufacturing,Male,2021,1754.2
@@ -27,8 +31,10 @@ Services,Male,2021,3902.1
 Agriculture,Female,2021,5630.6
 Mining and quarrying,Female,2021,237.2
 Manufacturing,Female,2021,882.2
-Construction,Female,2021,20.0
+Construction,Female,2021,20
 Services,Female,2021,2305.6
+All Sector,Male,2021,16088.7
+All Sector,Female,2021,9075.6
 Agriculture,Male,2022,9402.1
 Mining and quarrying,Male,2022,1160.8
 Manufacturing,Male,2022,1783.3
@@ -36,9 +42,11 @@ Construction,Male,2022,65.8
 Services,Male,2022,4171.4
 Agriculture,Female,2022,5753.1
 Mining and quarrying,Female,2022,247.3
-Manufacturing,Female,2022,887.0
+Manufacturing,Female,2022,887
 Construction,Female,2022,19.3
 Services,Female,2022,2272.6
+All Sector,Male,2022,16583.4
+All Sector,Female,2022,9179.3
 Agriculture,Male,2023,9849.5
 Mining and quarrying,Male,2023,1195.9
 Manufacturing,Male,2023,1837.6
@@ -49,3 +57,5 @@ Mining and quarrying,Female,2023,241.6
 Manufacturing,Female,2023,930.5
 Construction,Female,2023,17.2
 Services,Female,2023,2385.7
+All Sector,Male,2023,17351.7
+All Sector,Female,2023,9538.8
